@@ -16,7 +16,7 @@ int solution(std::vector<int>& numbers)
         sum_RL[i] = std::max(sum_RL[i+1] + numbers[i], 0);
     }
 
-    int max;
+    int max = 0;
 
     for(int i = 1; i < numbers.size()-1; ++i)
     {
